@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // đối tượng Circle
+
+        let Circle = function(radius){
+            
+            this.radius = radius;
+
+            this.getRadius = function(){
+                return radius;
+            }
+            this.getArea = function(){
+                return Math.PI * radius * radius;
+            }
+        
+        };
+
+          
+        let number = +prompt("nhập số bán kính hình tròn 1 là: ");
+        let circle = new Circle(number);
+        let radius = circle.getRadius();
+        let area = circle.getArea();
+        document.write("Bán kính hình tròn là: " + radius + "<br>" + "Diện tích hình tròn là: " + area + '<br>');
+
+        let number1 = +prompt("nhập số bán kính hình tròn 2 là: ");
+        let circle1 = new Circle(number1);
+        let radius1 = circle1.getRadius();
+        let area1 = circle1.getArea();
+        document.write("Bán kính hình tròn là: " + radius1 + "<br>" + "Diện tích hình tròn là: " + area1);
+
+    </script>
+</body>
+</html>
