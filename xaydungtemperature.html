@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function convertFahrenheit(C){
+            return (C*1.8) + 32;
+        }
+        function convertKevin(C){
+            return C + 273.15;
+        }
+        function convertTemperature(){
+            let F = convertFahrenheit(C);
+            let K = convertKevin(C);
+        }
+        let C = +prompt("Nhập độ C: ")
+        document.write("Độ F là:" + convertFahrenheit(C) + "<br>" + "Độ K là:" + convertKevin(C));
+    </script>
+</body>
+</html>
